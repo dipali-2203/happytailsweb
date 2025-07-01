@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #eaf2ff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-size: 25px;
+  font-weight:bold;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-button {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.book-button:hover {
+  background-color: black;
+  color : white
+}
+
+.services-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.services-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+}
+
+.service-block {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background-color: #eaf2ff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-block:hover {
+  transform: translateY(-5px);
+}
+
+.service-block img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.service-info {
+  flex: 1 1 300px;
+}
+
+.service-info h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-info p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.service-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

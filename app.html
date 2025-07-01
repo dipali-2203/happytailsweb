@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=Page">
+    <title>Booking Page </title>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar-left">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="serviceindex.html" class="nav-item">Services</a>
+            <a href="aboutindex.html" class="nav-item">About</a>
+            <a href="Sub.html" class="nav-item">Subscriptions</a>
+        </nav>
+        <div class="logo">
+            <img src="https://img.icons8.com/?size=100&id=9199&format=png&color=000000" alt="Happy logo"/>
+            <span>Happy Tails</span>
+        </div>
+        <div class="navbar-right">
+          <a href="contact.html" class="nav-item">Contact</a>
+            <a href="Log.html" class="nav-item">Login</a>
+            <button onclick="document.location='app.html'" class="book-button">Book now</button>
+        </div>
+    </header>
+
+    <main class="appointment-section">
+  <div class="form-area">
+    <h1>Book an<br>appointment</h1>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="E-mail address" required />
+      <input type="tel" placeholder="Phone number" required />
+      <select required>
+        <option disabled selected>Select Appointment Type</option>
+        <option>Dog Walking</option>
+        <option>Grooming</option>
+        <option>Daycare</option>
+        <option>Boarding</option>
+        <option>Training</option>
+        <option>Veterinary Care</option>
+      </select>
+      <input type="date" required />
+      <input type="time" required />
+      <button type="submit" class="btn-yellow submit">Book an appointment</button>
+    </form>
+  </div>
+  <div class="image-area">
+    <img src="bb.png" alt="Lady with Dog" />
+  </div>
+</main>
+
+    
+</body>
+</html>

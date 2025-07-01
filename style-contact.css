@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #eaf2ff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-size: 25px;
+  font-weight:bold;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-button {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.book-button:hover {
+  background-color: black;
+  color : white
+}
+.marquee{
+    position: relative;
+    top:5px;
+}
+.contact-form {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top:70px;
+  width: 400px;
+  background-color: #eaf2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 380px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px black;
+  transform: scale(1.02);
+  transition: transform 0.1s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1);
+  background-color: black;
+  color:white;
+  transition: transform 0.1s ease-in-out;
+}
+.dog-sitting{
+    position: relative;
+    bottom:560px;
+    height:620px;
+    left:100px
+}
+.cat-standing{
+    position:relative;
+    height:610px;
+    left:700px;
+    bottom:550px;
+}

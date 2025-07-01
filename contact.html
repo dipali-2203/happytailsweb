@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Tails</title>
+  <link rel="stylesheet" href="style-contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="navbar-left">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="serviceindex.html" class="nav-item">Services</a>
+      <a href="aboutindex.html" class="nav-item">About</a>
+      <a href="Sub.html" class="nav-item">Subscription</a>
+    </nav>
+    
+    <div class="logo">
+        <img src="https://img.icons8.com/?size=100&id=9199&format=png&color=000000" alt="Happy Logo"/>
+        <span>Happy Tails</span>
+    </div>
+    
+    <div class="navbar-right">
+      <a href="contact.html" class="nav-item active">Contact</a>
+      <a href="Log.html" class="nav-item">Login</a>
+      <button onclick="document.location='app.html'" class="book-button">Book now</button>
+    </div>
+  </header>
+  <marquee class="marquee">Special discounts on first service.</marquee>
+  <div class="contact-form">
+        <span class="heading">Contact Us</span>
+        <form>
+            <label for="name">First name:</label>
+            <input type="text" required="">
+            <label for="name">Last name:</label>
+            <input type="text" required="">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required="">
+            <label for="name">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required="">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required=""></textarea>
+            <button type="submit">Submit</button>
+        </form>
+  </div>
+  <img src="dog-sitting.png" alt="dog-sitting" class="dog-sitting"/>
+  <img src="cat-standing.png" alt="cat-standing" class="cat-standing"/>
+</body>
+</html>

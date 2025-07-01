@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh; 
+  overflow: hidden; 
+  background-color: #e6f0fb;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #eaf2ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-button {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+  white-space: nowrap;
+}
+
+.book-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.appointment-section {
+  display: flex;
+  align-items: center;
+  padding: 60px 100px;
+  background-color: #e7f3ff;
+  min-height: calc(100vh - 80px);
+}
+
+.form-area {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.form-area h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form select {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.submit {
+  margin-top: 10px;
+  background: #ffd000;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-area img {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}

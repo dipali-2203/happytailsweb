@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh; 
+   
+  background-color: #e6f0fb;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #eaf2ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-button {
+  background-color: #FFD700;
+  border: none;
+  color:black;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+  white-space: nowrap;
+}
+
+.book-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero {
+  background-color: #e6f0fd;
+  background-image: url('paw-bg.png');
+  background-repeat: repeat;
+  background-size: 80px;
+  padding: 3rem 2rem;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text span {
+  color: black;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cats-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.cat {
+  height: 300px;
+  object-fit: contain;
+}
+
+.cat-board-container {
+  position: relative;
+}
+
+.board-text {
+  position: absolute;
+  top: 66.5%;
+  left: 50.5%;     /* shifted slightly left */
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+  color: #000;
+  width: 120px;
+}
+
+
+
+.plan-selector {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: 600;
+  line-height: 2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan.happy {
+  background: #eaf2ff;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  text-align: left;
+  width: 100%;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #000;
+  color: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.highlight {
+  background: #ffd700;
+  color: #000;
+  font-weight: 700;
+}
+
+.default-tag {
+  background: #ffd700;
+  color: #000;
+  font-size: 0.65rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #e6f0fd;
+  font-size: 0.95rem;
+}
+
+footer nav {
+  margin-top: 1rem;
+}
+
+footer nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
